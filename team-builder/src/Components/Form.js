@@ -1,14 +1,6 @@
-import React, { useState } from 'react';
-import Team from './Team';
+import React from 'react';
 
 const Form = (props) => {
-
-  const [member, setMember] = useState({
-    id: '',
-    name: '',
-    email: '',
-    role: ''
-  });
 
   const submitForm = event => {
     event.preventDefault();

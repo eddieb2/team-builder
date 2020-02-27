@@ -7,9 +7,9 @@ const Team = (props) => {
 
     <div className='team-list'>
       
-          {props.team.map(item => {
+          {props.team.map((item, index) => {
           return(
-            <div className='team-member' key={item.id}>
+            <div className='team-member' key={index}>
               <h1>{item.name}</h1>
               <h2>{item.email}</h2>
               <h2>{item.role}</h2>

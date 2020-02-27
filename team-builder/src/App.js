@@ -4,16 +4,7 @@ import Form from './Components/Form';
 import './App.css';
 
 function App() {
-  const [team, setTeam] = useState([
-    {
-      id: 0,
-      name: 'Eddie',
-      email: 'eddie@gmail.com',
-      role: 'Full-Stack Developer'
-    }
-  ]);
-
-
+  const [team, setTeam] = useState([]);
 
   return (
     <div className="App">
