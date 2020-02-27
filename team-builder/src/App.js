@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import TeamMember from './Components/TeamMember';
+import Team from './Components/Team';
+import Form from './Components/Form';
 import './App.css';
 
 function App() {
@@ -7,18 +8,17 @@ function App() {
     {
       id: 0,
       name: 'Eddie',
+      email: 'eddie@gmail.com',
       role: 'Full-Stack Developer'
-    },
-    {
-      id: 1,
-      name: 'Joe',
-      role: 'Front-End Developer'
     }
   ]);
 
+
+
   return (
     <div className="App">
-      <TeamMember team={team}/>
+      <Form setTeam={setTeam} team={team}/>
+      <Team team={team}/>
     </div> 
   );
 }
